@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>prime</title>
+    </head>
+    <body>
+        <div>
+            <input type='number' id="data" value=""  />
+            <button onclick="p()" >calculate</button>
+            <p id="para"></p>
+        </div>
+
+        <script>
+            var n;
+            function p(){
+            const value=document.getElementById('data').value;
+            const para=document.getElementById('para');
+             n=parseInt(value);
+              if(isNaN(n)){
+                alert('enter a value')
+              }else{
+               let flag=false;
+                  if(n<=1){
+                    para.innerText='not a prime number';
+                    return;
+                  }
+               for(let i=2;i<=Math.sqrt(n);i++){
+                     if(n%i===0){
+                        flag=true;
+                     }
+               }
+               if(flag===true){
+                para.innerText='not a prime number';
+               }else{
+                para.innerText='prime number';
+               }
+              }
+            }
+            
+       </script>
+    </body>
+</html>

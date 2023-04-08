@@ -1,0 +1,142 @@
+
+.marginHandel{
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+   
+    
+}
+.main-Grid{
+    justify-content: center;
+}
+.doorbg{
+    background-image: linear-gradient(97deg,#27656b 70%,#ffba33 40%);
+    height: 90vh !important;
+    border-radius: 5px 0px 0px 5px;
+}
+@media screen and (max-width:899px) {
+    .doorbg{
+        background-image: none;
+        background-color: #27656b;
+        height: 90vh !important;
+        border-radius: 5px 0px 0px 5px;
+    } 
+    .imghandel{
+        margin-inline: auto;
+    display: block;
+      position: relative;
+    }
+}
+.loginbg{
+    background-color: #ffba33;
+    height: 90vh !important;
+    border-radius: 0px 5px 5px 0px;
+}
+.loginDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.formCard{
+    width: 70%;
+    margin-inline: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+   
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 6px 12px -6px #221;
+   opacity: 0.6;
+}
+.member-text{
+    color: orange !important ;
+    font-weight: bold;
+    
+}
+.needHelpText{
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.formDiv{
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textfiled{
+   margin: 1rem !important;
+   margin-bottom: 0rem !important;
+   padding: 1rem;
+   border: 1px solid lightgray;
+   border-radius: 4px;
+   font-size: 13px;
+   font-weight: bold;
+   color: #27656b;
+   font-family: sans-serif;
+   
+caret-color: #ffba33;
+
+}
+
+.parent{
+width: 80%;
+}
+.eye{
+    margin-left: -46px;
+    margin-top: -32px;
+    position: relative;
+    z-index: 2;
+}
+
+.handelButton{
+    padding-top:1rem;
+    padding-bottom: 1.5rem;
+   flex-direction: column;
+display: flex;
+justify-content: center;
+margin-left: 5%;
+margin-right: 5%;
+
+}
+.button{
+    background-color: #27656b !important;
+   
+   padding: 0.65rem !important;
+}
+
+.account-text{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+.create-text{
+    color: #27656b;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+.textdiv{
+    margin-top: 2rem;
+   text-align: center;
+}
+
+.doorhandel{
+    position: relative;
+}
+.imghandel{
+    position: absolute;
+    margin-top: 20%;
+}
+@media screen and (max-width:899px) and (min-width:700px) {
+    .parent{
+        width: 86.5%;
+    }
+}
