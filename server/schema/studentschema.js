@@ -5,15 +5,23 @@ const studentModal=new Schema({
     firstName: {
         type: String,
         trim: true,
-        default: ''
-        // validate: [validateLocalStrategyProperty, 'Please fill in your first name']
+        default: '',
+        validate(value){
+            if(value==''){
+                throw new Error( "firstname  is empty");
+            }
+        }
         },
         lastName: {
         type: String,
         trim: true,
-        default: ''
-        // validate: [validateLocalStrategyProperty, 'Please fill in your last name']
-        },
+        default: '',
+        validate(value){
+            if(value==''){
+                throw new Error( "lastname is empty");
+            }
+        }
+     },
         displayName: {
         type: String,
         trim: true
